@@ -30,6 +30,24 @@ func (m *Repository) Home(w http.ResponseWriter, r *http.Request) {
 	render.RenderTemplates(w, "home.page.html", &models.TemplateData{})
 }
 
+func (m *Repository) Major_suit(w http.ResponseWriter, r *http.Request) {
+	render.RenderTemplates(w, "major.page.html", &models.TemplateData{})
+}
+
+func (m *Repository) Generals_quarter(w http.ResponseWriter, r *http.Request) {
+	render.RenderTemplates(w, "generals.page.html", &models.TemplateData{})
+}
+
+func (m *Repository) Availability(w http.ResponseWriter, r *http.Request) {
+	render.RenderTemplates(w, "search-availability.page.html", &models.TemplateData{})
+}
+func (m *Repository) Contact(w http.ResponseWriter, r *http.Request) {
+	render.RenderTemplates(w, "contact.page.html", &models.TemplateData{})
+}
+func (m *Repository) MakeReservation(w http.ResponseWriter, r *http.Request) {
+	render.RenderTemplates(w, "make-reservation.page.html", &models.TemplateData{})
+}
+
 func (m *Repository) About(w http.ResponseWriter, r *http.Request) {
 
 	stringMap := make(map[string]string)
